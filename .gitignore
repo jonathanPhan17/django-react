@@ -1,0 +1,14 @@
+# Ignore the virtual environment directory
+env/
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore database and other sensitive data
+*.sqlite3
+
+# Ignore environment variables file (if using)
+.env
