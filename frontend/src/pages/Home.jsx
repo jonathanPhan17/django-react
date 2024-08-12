@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note";
+import "../styles/Home.css";
 
 function Home() {
     const [notes, setNotes] = useState([]);
@@ -39,7 +40,7 @@ function Home() {
     }
 
     return (
-        <div>
+        <div className="home-container">
             <div>
                 <h2>Notes</h2>
 
