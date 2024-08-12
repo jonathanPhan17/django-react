@@ -35,7 +35,7 @@ function Form({ route, method }) {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="form-container">   
+        <form onSubmit={handleSubmit} className="form-container">    
             <h1>{name}</h1>
             <input 
                 className="form-input"
