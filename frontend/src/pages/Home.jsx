@@ -43,11 +43,11 @@ function Home() {
         <div className="home-container">
             <div>
                 <h2>Notes</h2>
-
+                {notes.map((note) => <Note note={note} onDelete={deleteNote} 
+                key={note.id} />)}
             </div>
             <h2>Create a Note</h2>
-            {notes.map((note) => <Note note={note} onDelete={deleteNote} key={note.id}/>)}
-            <form onSubmit={createNote}>
+            <form onSubmit={createNote} className="create-form-container">
                 <label htmlFor="title">Title:</label>
                 <br />
                 <input
